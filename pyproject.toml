@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "autogest"
+version = "0.1.0"
+description = ""
+authors = ["Enrique <ebotiabarbera@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = {extras = ["all]"], version = "^0.12.3"}
+loguru = "^0.7.2"
+python-dotenv = "^1.0.1"
+tqdm = "^4.66.4"
+pandas = "^2.2.2"
+numpy = "^2.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
