@@ -6,5 +6,9 @@
 - Tax already paid: {{ tax_paid }}€
 - Deducted amount: {{ to_deduct }}€
 --------------------------------------------------
+{% if income_tax < 0 %}
 [bold green]INCOME TAX: {{ income_tax }}€[/bold green]
+{% else %}
+[bold red]INCOME TAX: {{ income_tax }}€[/bold red]
+{% endif %}
 
